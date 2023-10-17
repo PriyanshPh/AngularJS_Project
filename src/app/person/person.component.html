@@ -1,0 +1,30 @@
+<form action="" style="text-align: center;">
+    <div style="background-color: blanchedalmond; margin-top: 10px;">
+        <button type="submit" (click)="getPosts()">Get All Records</button>
+        <p>{{posts | json}}</p>
+        <!-- <div>
+            <li *ngFor="let i of posts">
+                <p>{{i.name}}</p>
+                <a href="{{i.mobile}}">{{i.mobile}}</a>
+            </li>
+        </div> -->
+    </div>
+    <div style="background-color: aquamarine;">
+        <label for="">Enter Id: </label>
+        <input type="number" [(ngModel)]="id" name="id"> <br><br>
+        <button type="submit" (click)="getById()">Get By Id</button>
+        <p>{{id | json}}</p>
+    </div>
+
+    <div style="background-color: blanchedalmond;"><label for="">Enter Name: </label>
+        <input type="text" [(ngModel)]="name" name="name"> <br><br>
+        <button type="submit" (click)="getByName()">Get By Name</button>
+        <p>{{name | json}}</p>
+    </div>
+
+    <div style="background-color: aquamarine;"><label for="">Enter Genres: </label>
+        <input type="text" [(ngModel)]="genres" name="genres"> <br><br>
+        <button type="submit" (click)="searchBygenres()">Search By genres</button>
+        <p>{{genres | json}}</p>
+    </div>
+</form>

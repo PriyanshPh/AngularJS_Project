@@ -1,0 +1,7 @@
+<h1>{{Msg}}</h1>
+<form style="text-align: center; margin-top: 10%;"><label for="">Enter Id:=> </label>
+    <input type="number" [(ngModel)]="id" name="id"> <br><br>
+    <button type="submit" (click)="delete()" (click)="onclick()">Delete By Id</button><br><br>
+
+    <button type="submit" (click)="deleteAll()" (click)="onclick()" style="margin-top: 45px;">Delete All Records</button>
+</form>

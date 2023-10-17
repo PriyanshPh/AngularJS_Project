@@ -1,0 +1,36 @@
+button {
+    background-color: #4CAF50;
+    border: 1.5px solid black;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+  }
+
+button:hover {
+    background-color: red;
+    color: skyblue;
+    cursor: pointer;
+    box-shadow: 0 9px #999;
+  }
+  
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  
+input{
+    padding: 10px;
+    border: solid;
+    font-size: 15px;
+    color: black;
+}
+label{
+  padding: 10px;
+  font-size: 15px;
+}

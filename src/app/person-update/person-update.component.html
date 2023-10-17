@@ -1,0 +1,29 @@
+<form>
+    <label for="">Email: </label>
+    <input type="text" [(ngModel)]="model.email" name="email"> <br><br>
+
+    <label for="">Mobile Number: </label>
+    <input type="text" [(ngModel)]="model.mobile" name="mobile"> <br><br>
+
+    <label for="">Gender: </label>
+    <input type="text" [(ngModel)]="model.gender" name="gender"> <br><br>
+
+    <label for="">Age: </label>
+    <input type="number" [(ngModel)]="model.age" name="age"> <br><br>
+
+    <label for="">Name: </label>
+    <input type="text" [(ngModel)]="model.name" name="name"> <br><br>
+
+    <label for="">Movie name: </label>
+    <input type="text" [(ngModel)]="model.movieName" name="name"> <br><br>
+
+    <label for="">Release Date: </label>
+    <input type="text" [(ngModel)]="model.releaseDate" name="releaseDate"> <br><br>
+
+    <label for="">Genres: </label>
+    <input type="text" [(ngModel)]="model.genres" name="genres"> <br><br>
+
+    <label for="">RunTime Minutes: </label>
+    <input type="number" [(ngModel)]="model.runtime_minutes" name="runtime_minutes"> <br><br>
+    <button type="submit" (click)="personUpdate()">Update</button>
+</form>
